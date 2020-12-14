@@ -7,7 +7,7 @@ Also, feel free to fork it and submit a pull request :)
 
 ## How do i install it?
 
-As i said before, it was made in React Native so install it using the [React Native Documentation]([Setting up the development environment · React Native](https://reactnative.dev/docs/environment-setup)), a lot of things will not work of course because it will need the backend and database in order to run (since front and backend aren't decoupled), and the adressses are blank (it's written as IP:Port), if you wanna see the screens just remove these parts that has connection with the backend.
+As i said before, it was made in React Native so install it using the [React Native Documentation](https://reactnative.dev/docs/environment-setup), a lot of things will not work of course because it will need the backend and database in order to run (since front and backend aren't decoupled), and the adressses are blank (it's written as IP:Port), if you wanna see the screens just remove these parts that has connection with the backend.
 
 ## License
 
