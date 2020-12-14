@@ -4,6 +4,7 @@ import {Image, FlatList, ScrollView, TouchableOpacity } from 'react-native-gestu
 
 import {css} from './css'
 
+/* explore/discover other articles screen */
 
 export default function Explorar(props) {
      

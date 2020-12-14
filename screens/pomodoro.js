@@ -6,9 +6,10 @@ const MAX_SECONDS = 1500 //25min
 const REST_SECONDS = 300 //5min
 const DURATION = 1000
 
+/* timer/pomodoro screen */
+
 class Count extends React.Component {
   constructor() {
-    // constructor stuff only happens once
     super()
     this.state = {
       count: MAX_SECONDS, 
@@ -17,7 +18,6 @@ class Count extends React.Component {
     }
     this.interval = null
 
-    // bind this to function calls
     this.startCounter = this.startCounter.bind(this)
     this.stopCounter = this.stopCounter.bind(this)
     this.resetCounter = this.resetCounter.bind(this)
@@ -27,13 +27,13 @@ class Count extends React.Component {
   }
 
   startCounter () {
-    if(this.state.isCountingDown) { //prevent startcounter from running again while decrementing
+    if(this.state.isCountingDown) {
       console.log('already decrementing')
     } else {
-      this.interval = setInterval(this.decrementCount, 1000) //decrement every second
+      this.interval = setInterval(this.decrementCount, 1000)
       this.setState({isCountingDown: true, status: 'working'}) 
     }
-    if(this.state.isCountingDown) { //prevent startbreakcounter from running again while decrementing
+    if(this.state.isCountingDown) {
       console.log('already decrementing')
     } else {
       if(this.state.count <= 0 && this.state.breakCount > 0) { 
@@ -46,7 +46,6 @@ class Count extends React.Component {
     }
   }
 
-  //stop decrement and reset state seconds
   resetCounter () { 
     this.stopCounter()
     this.setState({ 
@@ -58,7 +57,7 @@ class Count extends React.Component {
 
   stopCounter () {
     if(this.interval){
-      clearInterval(this.interval) //clear active timer interval
+      clearInterval(this.interval) 
       this.setState({isCountingDown: false, status: 'idle'})
     } else {
       console.log('no interval to clear')
@@ -66,7 +65,7 @@ class Count extends React.Component {
   }
 
   decrementCount () {
-    this.setState(prevState => ({count: prevState.count - 1})) //decrement count by 1
+    this.setState(prevState => ({count: prevState.count - 1})) 
     if(this.state.count === 0) {
       this.stopCounter()
       this.startBreakCounter()
@@ -78,7 +77,7 @@ class Count extends React.Component {
     if(this.state.isCountingDown) { 
       console.log('already decrementing')
     } else {
-      this.interval = setInterval(this.decrementBreakCount, 1000) //decrement every second
+      this.interval = setInterval(this.decrementBreakCount, 1000) 
       this.setState({isCountingDown: true, status: 'resting'}) 
     }
     if(this.state.breakCount <= 0) {
@@ -87,7 +86,7 @@ class Count extends React.Component {
   }
 
   decrementBreakCount() {
-    this.setState(prevState => ({breakCount: prevState.breakCount -1})) //decrement breakcount by 1
+    this.setState(prevState => ({breakCount: prevState.breakCount -1}))
     if(this.state.breakCount === 0) { 
       this.stopCounter() 
       

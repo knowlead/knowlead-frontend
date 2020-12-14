@@ -4,14 +4,18 @@ import {TouchableOpacity} from 'react-native-gesture-handler';
 
 import {css} from './css'
 
+/* login screen */
+
 export default function Login({navigation}) {
 
     const [value_email, onChangeEmail] = React.useState('');
     const [value_passw, onChangePassw] = React.useState('');
 
+    // LOGIN AUTHENTICATION        
+
     async function enviarForm()
     {
-        let response = await fetch('http://192.168.15.166:3000/login',{
+        let response = await fetch('http://IP:Port/login',{
             method: 'POST',
             headers: {
                 Accept: 'application/json',
@@ -33,7 +37,6 @@ export default function Login({navigation}) {
         }
     }
     
-
     return (
         <View style={css.container}>
             <View style={css.centralized}>

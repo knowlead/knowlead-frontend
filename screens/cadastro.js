@@ -4,7 +4,7 @@ import {TouchableOpacity} from 'react-native-gesture-handler';
 
 import {css} from './css'
 
-
+/* sign up/register screen */
 
 export default function Cadastro(props) {
     const [value_nome, onChangeNome] = React.useState('');

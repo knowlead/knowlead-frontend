@@ -21,7 +21,9 @@ import VerArtigo from './screens/verArtigo';
 const Stack = createStackNavigator();
 
 export default function App() {
-  LogBox.ignoreAllLogs()
+  
+  LogBox.ignoreAllLogs() // IGNORE ALL LOGS
+
   function SttsNote (x){
     var st = 1;
     var ststring

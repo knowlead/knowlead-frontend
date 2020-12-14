@@ -5,7 +5,7 @@ import {onChange} from 'react-native-reanimated';
 
 import {css} from './css'
 
-
+/* create/edit a note screen */
 
 export default function CriarNota(props) {
     
@@ -38,7 +38,7 @@ export default function CriarNota(props) {
     }
 
     async function verificaSeNotaCriada() {
-        let verifyresponse = await fetch('http://192.168.15.166:3000/verifyIfNoteCreated',{
+        let verifyresponse = await fetch('http://IP:Port/verifyIfNoteCreated',{
             method: 'POST',
             headers: {
                 Accept: 'application/json',
@@ -69,7 +69,7 @@ export default function CriarNota(props) {
     //     //     // CRIAR NOTA
     //     //     // let resData = await AsyncStorage.getItem('userData');
     //     //     // let resData1 = JSON.parse(resData)
-    //     //     // let response1 = await fetch ('http://192.168.15.166:3000/createNote',{
+    //     //     // let response1 = await fetch ('http://IP:Port/verifyIfNoteCreated',{
     //     //     // method: 'POST',
     //     //     // headers: {
     //     //     //     Accept: 'application/json',
@@ -89,7 +89,7 @@ export default function CriarNota(props) {
     //     //     // let userData = await AsyncStorage.setItem('userData', JSON.stringify(json));
     //     //     // let resData = await AsyncStorage.getItem('userData');
     //     //     // let resData1 = JSON.parse(resData)
-    //     //     // let response2 = await fetch ('http://192.168.15.166:3000/createNote',{
+    //     //     // let response2 = await fetch ('http://IP:Port/verifyIfNoteCreated',{
     //     //     // method: 'POST',
     //     //     // headers: {
     //     //     //     Accept: 'application/json',

@@ -5,7 +5,7 @@ import {onChange} from 'react-native-reanimated';
 
 import {css} from './css'
 
-
+/* view article screen */
 
 export default function verArtigo(props) {
     

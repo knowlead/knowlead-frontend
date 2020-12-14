@@ -5,9 +5,11 @@ import {SafeAreaView} from 'react-native-safe-area-context';
 import {useState,useEffect} from 'react';
 import {css} from './css'
 
-
+/* home screen */
 
 export default function Home(props) {
+
+    // ASYNC FUNCTION THAT STORES USER DATA
 
     const [user,setUser] = useState(null);
     useEffect(()=>{

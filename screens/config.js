@@ -2,7 +2,7 @@ import React from 'react';
 import {StyleSheet, Text, View, TouchableOpacity,Image} from 'react-native';
 import {css} from './css'
 
-
+/* settings screen */
 
 export default function Config(props) {
 

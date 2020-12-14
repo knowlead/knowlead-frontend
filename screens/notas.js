@@ -6,6 +6,7 @@ import {useState,useEffect} from 'react';
 
 import {css} from './css'
 
+/* mynotes screen */
 
 export default function Notas(props) {
         var notes=[

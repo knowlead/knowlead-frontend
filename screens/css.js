@@ -2,7 +2,6 @@ import {StyleSheet,Dimensions} from "react-native";
 
 const widthScreen = Dimensions.get('window').width; 
 const heightScreen = Dimensions.get('window').height;
-
 const css = StyleSheet.create({
 
     // ALL SCREENS STYLE------------------------------------------------------------------------------------------
