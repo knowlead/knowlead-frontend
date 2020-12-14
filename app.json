@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "Knowlead EXPO",
+    "slug": "Knowlead",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/circularLogo.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/circularLogo.png",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    "web": {
+      "favicon": "./assets/circularLogo.png"
+    }
+  }
+}
